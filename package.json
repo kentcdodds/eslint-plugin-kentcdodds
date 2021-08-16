@@ -29,5 +29,18 @@
   "peerDependencies": {
     "eslint": ">=6"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentcdodds/eslint-plugin-kentcdodds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kentcdodds/eslint-plugin-kentcdodds/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/eslint-plugin-kentcdodds#readme"
 }

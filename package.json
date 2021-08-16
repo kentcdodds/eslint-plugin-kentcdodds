@@ -1,0 +1,33 @@
+{
+  "name": "eslint-plugin-kentcdodds",
+  "version": "0.0.0-semantically-released",
+  "description": "Custom rules for Kent",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Kent",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha tests --recursive",
+    "validate": "npm run lint && npm run test"
+  },
+  "dependencies": {
+    "requireindex": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-plugin-eslint-plugin": "^3.2.0",
+    "eslint-plugin-node": "^11.0.0",
+    "mocha": "^9.0.0"
+  },
+  "engines": {
+    "node": "12.x || 14.x || >= 16"
+  },
+  "peerDependencies": {
+    "eslint": ">=6"
+  },
+  "license": "MIT"
+}

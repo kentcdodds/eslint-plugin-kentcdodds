@@ -9,27 +9,27 @@ This rule aims to...
 Examples of **incorrect** code for this rule:
 
 ```js
-
-// fill me in
-
+const missingTheC = `Kent Dodds`
+const missingTheS = `Kent Dodd`
+const notBs = `Kent Dobbs`
+const notBs = `Kent C. Dobbs`
+const missingTheDot = `Kent C Dodds`
+const iAmNotADog = `Kent Dogs`
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-
-// fill me in
-
+const firstOnly = `Kent`
+const firstAndMiddle = `Kent C.`
+const fullName = `Kent C. Dodds`
+const lastOnly = `Dodds`
 ```
-
-### Options
-
-If there are any options, describe them here. Otherwise, delete this section.
 
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
+When you do not plan on writing Kent's name in a string.
 
 ## Further Reading
 
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+- https://kcd.im/info

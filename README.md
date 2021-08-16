@@ -18,29 +18,25 @@ npm install eslint-plugin-kentcdodds --save-dev
 
 ## Usage
 
-Add `kentcdodds` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `kentcdodds` to the plugins section of your `.eslintrc` configuration file.
+You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
-    "plugins": [
-        "kentcdodds"
-    ]
+  "plugins": ["kentcdodds"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "kentcdodds/rule-name": 2
-    }
+  "rules": {
+    "kentcdodds/spell-kents-name-correctly": "error"
+  }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
-
-
+- [`kentcdodds/spell-kents-name-correctly`](docs/spell-kents-name-correctly.md)

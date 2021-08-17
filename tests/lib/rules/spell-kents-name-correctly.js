@@ -18,73 +18,31 @@ const rule = require('../../../lib/rules/spell-kents-name-correctly'),
 const ruleTester = new RuleTester()
 ruleTester.run('spell-kents-name-correctly', rule, {
   valid: [
-    // give me some code that won't trigger a warning
-  ],
+    `Kent`,
+    `Kent C.`,
+    // `Kent C. Dodds`,
+    `Dodds`,
+  ].map(name=>({code: `var x = "yo ${name} dawg"`,})),
 
   invalid: [
-    {
-      code: 'var x = "yo Kent Dodds dawg"',
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent dodds dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent dodd dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent c. dodd dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent c dodd dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo ken dodd dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo ken c. dodd dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo ken c dodd dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent dobbs dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent c. dobbs dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent c dobbs dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent c dodds dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent dogs dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent c. dogs dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent c dogs dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-    {
-      code: `var x = "yo kent c. dodd's dawg"`,
-      errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
-    },
-  ],
+    `Kent Dodds`,
+    `kent dodds`,
+    `kent dodd`,
+    `kent c. dodd`,
+    `kent c dodd`,
+    `kent dobbs`,
+    `kent c. dobbs`,
+    `kent c dobbs`,
+    `ken dodd`,
+    `ken c. dodd`,
+    `ken c dodd`,
+    `kent c dodds`,
+    `kent dogs`,
+    `kent c. dogs`,
+    `kent c dogs`,
+    `kent c. dodd's`,
+  ].map((name) => ({
+    code: `var x = "yo ${name} dawg"`,
+    errors: [{message: `Spell Kent's name correctly: https://kcd.im/info`}],
+  })),
 })

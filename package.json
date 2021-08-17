@@ -2,13 +2,22 @@
   "name": "eslint-plugin-kentcdodds",
   "version": "0.0.0-semantically-released",
   "description": "Custom rules for Kent",
+  "main": "lib/index.js",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "Kent",
-  "main": "lib/index.js",
+  "author": "Kent C. Dodds <me@kentcdodds.com> (https://kentcdodds.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentcdodds/eslint-plugin-kentcdodds"
+  },
+  "bugs": {
+    "url": "https://github.com/kentcdodds/eslint-plugin-kentcdodds/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/eslint-plugin-kentcdodds#readme",
   "scripts": {
     "lint": "eslint .",
     "test": "mocha tests --recursive",
@@ -23,24 +32,15 @@
     "eslint-plugin-node": "^11.0.0",
     "mocha": "^9.0.0"
   },
-  "engines": {
-    "node": "12.x || 14.x || >= 16"
-  },
   "peerDependencies": {
     "eslint": ">=6"
   },
-  "license": "MIT",
+  "engines": {
+    "node": "12.x || 14.x || >= 16"
+  },
   "directories": {
     "doc": "docs",
     "lib": "lib",
     "test": "tests"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kentcdodds/eslint-plugin-kentcdodds.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kentcdodds/eslint-plugin-kentcdodds/issues"
-  },
-  "homepage": "https://github.com/kentcdodds/eslint-plugin-kentcdodds#readme"
+  }
 }

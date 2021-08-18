@@ -51,7 +51,7 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-- [`kentcdodds/spell-kents-name-correctly`](docs/spell-kents-name-correctly.md)
+- [`kentcdodds/spell-kents-name-correctly`](docs/rules/spell-kents-name-correctly.md)
 
 ## Issues
 

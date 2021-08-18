@@ -33,6 +33,15 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "bennettdams",
+      "name": "Bennett",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29319414?v=4",
+      "profile": "https://github.com/bennettdams",
+      "contributions": [
+        "doc"
+      ]
     }
   ]
 }
